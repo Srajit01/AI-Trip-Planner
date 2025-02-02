@@ -15,7 +15,6 @@ function PlaceCardItem({ place, fetchImages, timeSlot }) {
   return (
     <div className="border rounded-lg p-4 shadow-md transition-transform duration-300 hover:shadow-xl hover:scale-105">
       <div className="flex flex-col md:flex-row gap-6">
-        {/* Image Carousel */}
         <div className="w-full md:w-1/3">
           {images.length > 0 ? (
             <div className="relative w-full h-48 overflow-hidden rounded-lg">
@@ -38,7 +37,7 @@ function PlaceCardItem({ place, fetchImages, timeSlot }) {
           )}
         </div>
 
-        {/* Details Section */}
+       
         <div className="flex-1">
           <h3 className="text-xl font-bold mb-3 text-gray-800">
             {place.placeName}
@@ -48,7 +47,6 @@ function PlaceCardItem({ place, fetchImages, timeSlot }) {
             {place.placeDetails}
           </p>
 
-          {/* Timing */}
           <p className="text-gray-700 mb-3">
             <strong>Suggested Time:</strong> {timeSlot}
           </p>

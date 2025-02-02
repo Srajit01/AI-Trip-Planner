@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { Calendar, Clock, Ticket, Star, Navigation } from 'lucide-react';
 import { GetplaceDetails, PHOTO_REF_URL } from '@/service/GlobalApi';
-import PlaceCardItem from './PlaceCardItem';
+import PlaceCardItem from './PlaceCarditem'
 
 const timeSlots = ["9 AM - 12 PM", "2 PM - 5 PM", "After 5 PM"];
 
